@@ -1,28 +1,28 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Product {
     String name;
     int price;
 
-    Product(String name, int price) {
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
     }
 
-    void setPrice(int newPrice) {
+    public void setPrice(int newPrice) {
         this.price = newPrice;
     }
 
-    int getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    void applyDiscount(int discount) {
+    public void applyDiscount(int discount) {
         price = price * discount / 100;
 
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("Название: " + name + " Цена: " + price);
     }
 }

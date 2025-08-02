@@ -1,23 +1,23 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Circle {
     double radius;
 
-    Circle(double radius){
+    public Circle(double radius){
         this.radius=radius;
     }
 
-    void setRadius(double newRadius){
+    public void setRadius(double newRadius){
         this.radius=newRadius;
     }
-    double getRadius(){
+    public double getRadius(){
         return this.radius;
     }
-    void calculateArea(){
+    public void calculateArea(){
         double area= 3.14 * radius * radius;
         System.out.println("Площадь окружности: " + area);
     }
-    void calculateCircumference(){
+    public void calculateCircumference(){
         double circumference = 3.14 * radius / 2;
         System.out.println("Длина окружности: " + circumference);
     }

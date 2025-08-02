@@ -1,31 +1,31 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Laptop {
     String brand;
     int price;
 
-    Laptop(String brand, int price) {
+    public Laptop(String brand, int price) {
         this.brand = brand;
         this.price = price;
     }
 
-    void setBrand(String newBrand) {
+    public void setBrand(String newBrand) {
         this.brand = newBrand;
     }
 
-    void setPrice(int newPrice) {
+    public void setPrice(int newPrice) {
         this.price = newPrice;
     }
 
-    String getBrand() {
+    public String getBrand() {
         return brand;
     }
 
-    int getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    void printInfo() {
+    public void printInfo() {
         System.out.println("Бренд: " + brand + " Цена: " + price + "руб");
     }
 }

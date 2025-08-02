@@ -1,31 +1,31 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Book {
     String title;
     String author;
 
-    Book(String title, String author) {
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
 
-    void setTitle(String title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
-    void setAuthor(String author) {
+    public void setAuthor(String author) {
         this.author = author;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return this.title;
     }
 
-    String getAuthor() {
+    public String getAuthor() {
         return this.author;
     }
 
-    void print() {
+    public void print() {
         System.out.println(this.title + " " + this.author);
 
     }

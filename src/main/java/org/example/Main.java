@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.firstJavaClassAndObject.*;
+import org.example.firstJavaProgram.MathOperations;
+
 public class Main {
     public static void main(String[] args) {
 

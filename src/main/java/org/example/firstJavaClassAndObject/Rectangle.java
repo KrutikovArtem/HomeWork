@@ -1,26 +1,26 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Rectangle {
     double width;
     double height;
 
-    Rectangle(double width, double height){
+    public Rectangle(double width, double height){
         this.width=width;
         this.height=height;
     }
 
-    double getWidth(){
+    public double getWidth(){
         return this.width;
     }
-    double getHeight(){
+    public double getHeight(){
         return this.height;
     }
 
-    void setWidth(double width){
+    public void setWidth(double width){
         this.width=width;
     }
 
-    void calculateArea(){
+    public void calculateArea(){
         System.out.println(this.width * this.height);
     }
 }

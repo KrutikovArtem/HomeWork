@@ -1,9 +1,9 @@
-package org.example;
+package org.example.firstJavaClassAndObject;
 
 public class Teacher {
     String name;
     String subject;
-    Teacher(String name, String subject){
+    public Teacher(String name, String subject){
         this.name=name;
         this.subject=subject;
     }
@@ -24,7 +24,7 @@ public class Teacher {
         this.subject = subject;
     }
 
-    void printInfo(){
+    public void printInfo(){
         System.out.println("Имя учителя "+ name + " Предмен: " + subject);
     }
 }
