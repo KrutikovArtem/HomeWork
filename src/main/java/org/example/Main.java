@@ -28,7 +28,7 @@ public class Main {
         car1.setYear(2010);
         car1.print();
 
-        Rectangle rectangle1 = new Rectangle(7.7,5.6);
+        Rectangle rectangle1 = new Rectangle(7.7, 5.6);
         rectangle1.setWidth(10);
         rectangle1.calculateArea();
 
@@ -36,16 +36,16 @@ public class Main {
         book1.setAuthor("Пушкин");
         book1.print();
 
-        BankAccount bankAccount1 = new BankAccount("Artem",500);
+        BankAccount bankAccount1 = new BankAccount("Artem", 500);
         bankAccount1.deposit(1000);
         bankAccount1.withdraw(300);
         bankAccount1.printBalance();
 
-        Point point1 = new Point(8,10);
+        Point point1 = new Point(8, 10);
         point1.setX(45);
         point1.print();
 
-        StudentGroup studentGroup1 = new StudentGroup("Волки",100);
+        StudentGroup studentGroup1 = new StudentGroup("Волки", 100);
         studentGroup1.setStudentCount(88);
         studentGroup1.printInfo();
 
@@ -58,13 +58,54 @@ public class Main {
         teacher1.setSubject("Русский язык");
         teacher1.printInfo();
 
-        Product product1 = new Product("moloko",200);
+        Product product1 = new Product("moloko", 200);
         product1.applyDiscount(50);
         product1.printInfo();
 
         Laptop laptop1 = new Laptop("Asus", 100000);
         laptop1.setPrice(80000);
         laptop1.printInfo();
+
+        //Домашнее задание: Static, final и модификаторы доступа
+
+        Company company1 = new Company("Ura", 1);
+        Company company2 = new Company("Petr", 2);
+        Company.companyName = "Рога и копыта";
+        System.out.println(Company.companyName);
+
+        Library library1 = new Library();
+        library1.setBookTitle("Золотая рыбка");
+
+        University university1 = new University(1,"Sasha");
+        University university2 = new University(2,"Ura");
+        University university3 = new University(3,"Yan");
+        University.universityName="СГУПС";
+        university1.printStudentInfo();
+        university2.printStudentInfo();
+        university3.printStudentInfo();
+
+        GameSettings gameSettings1 = new GameSettings("Дота2");
+        GameSettings gameSettings2 = new GameSettings("CSGO");
+        GameSettings.setMaxPlayers(5);
+        gameSettings1.addPlayer();
+        gameSettings1.addPlayer();
+        gameSettings1.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings2.addPlayer();
+        gameSettings1.printGameStatus();
+        gameSettings2.printGameStatus();
+
+        Person person1 = new Person("Артем", "Крутиков","ЛУА2342342342342");
+        Person person2 = new Person("Карина", "Смирнова","ЛУА848485488484");
+        person2.setFirstName("Ольга");
+        person1.printPersonInfo();
+        person2.printPersonInfo();
 
 
     }
